@@ -46,3 +46,11 @@ Output: [0,1]
 - `ai != bi`
 - All the pairs `(ai, bi)` are distinct.
 - The given input is **guaranteed** to be a tree and there will be **no repeated** edges.
+
+## Solution
+
+<details>
+  <summary>Click to expand!</summary>
+
+We're looking to use a type of Topological Sort here. The premise of the algorithm is to continually trim leaves until we're left with the most "central" nodes in the graph. You're guaranteed to either be left with 1 or 2 central nodes.
+</details>
